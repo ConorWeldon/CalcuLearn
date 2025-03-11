@@ -1,0 +1,683 @@
+{
+  "quiz": [{
+      "lessonId": "conic-sections",
+      "title": "Conic Sections Assessment",
+      "questions": [{
+          "question": "Which of the following best describes a conic section?",
+          "choices": [
+            "A curve obtained by cutting a sphere with a plane",
+            "A curve obtained by intersecting a plane with a double-napped cone",
+            "A curve obtained by folding a paper into a circle",
+            "A straight-line graph"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What are the four types of conic sections?",
+          "choices": [
+            "Line, curve, plane, circle",
+            "Parabola, ellipse, hyperbola, triangle",
+            "Circle, ellipse, parabola, hyperbola",
+            "Cylinder, sphere, cone, paraboloid"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "What is the eccentricity (e) of a circle?",
+          "choices": [
+            "1",
+            "0",
+            "Greater than 1",
+            "Less than 0"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "If a plane cuts through only one nappe of the cone at an angle equal to the cone’s slant height, what conic section is formed?",
+          "choices": [
+            "Hyperbola",
+            "Parabola",
+            "Ellipse",
+            "Circle"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which real-world object is an example of a parabola?",
+          "choices": [
+            "Car’s side mirror",
+            "Satellite dish",
+            "A basketball",
+            "A globe"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which of the following correctly describes the directrix of a conic section?",
+          "choices": [
+            "A fixed point used to define a conic section",
+            "A line perpendicular to the conic section",
+            "A fixed line used to define a conic section",
+            "The longest chord of an ellipse"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "In an ellipse, the distance from the center to a focus is called the:",
+          "choices": [
+            "Minor axis",
+            "Major axis",
+            "Linear eccentricity",
+            "Principal axis"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "A hyperbola is different from an ellipse because:",
+          "choices": [
+            "It has two foci instead of one",
+            "It has an eccentricity greater than 1",
+            "It has no directrix",
+            "It forms a perfect circle"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which conic section can be represented by the equation y² = 4ax?",
+          "choices": [
+            "Circle",
+            "Ellipse",
+            "Parabola",
+            "Hyperbola"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "What is the standard equation of a circle with center at the origin and radius r?",
+          "choices": [
+            "x² + y² = r²",
+            "(x - r)² + y² = r²",
+            "x² + y² = 1",
+            "(x + r)² + y² = r²"
+          ],
+          "answer": 0
+        }
+      ]
+    }, {
+      "lessonId": "circle-assessment",
+      "title": "Circle Assessment",
+      "questions": [{
+          "question": "What is the definition of a circle?",
+          "choices": [
+            "A shape with four equal sides",
+            "A closed figure where all points are equidistant from the center",
+            "A figure with three angles",
+            "A shape that has both length and width but no curved sides"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which of the following correctly represents the formula for the equation of a circle?",
+          "choices": [
+            "x² + y² = r²",
+            "(x-h)² + (y-k)² = r²",
+            "x² + y² + Dx + Ey + F = 0",
+            "r = (x-h)² + (y-k)²"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What is the longest chord in a circle?",
+          "choices": [
+            "Secant",
+            "Radius",
+            "Diameter",
+            "Tangent"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "If the radius of a circle is 7 cm, what is its diameter?",
+          "choices": [
+            "3.5 cm",
+            "7 cm",
+            "14 cm",
+            "21 cm"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "Which term describes a straight line that touches a circle at exactly one point?",
+          "choices": [
+            "Chord",
+            "Secant",
+            "Tangent",
+            "Radius"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "What is the circumference of a circle with a radius of 5 cm?",
+          "choices": [
+            "10 cm",
+            "15.7 cm",
+            "31.4 cm",
+            "78.5 cm"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "What is the area of a circle with a diameter of 12 cm?",
+          "choices": [
+            "113.04 cm²",
+            "452.16 cm²",
+            "37.68 cm²",
+            "25.12 cm²"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "A line segment that connects the center of a circle to any point on the circle is called a:",
+          "choices": [
+            "Chord",
+            "Diameter",
+            "Radius",
+            "Tangent"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "Which of the following statements is true?",
+          "choices": [
+            "The radius is always longer than the diameter",
+            "A secant is a special type of tangent",
+            "A chord always passes through the center of a circle",
+            "The diameter is the longest chord in a circle"
+          ],
+          "answer": 3
+        },
+        {
+          "question": "If the circumference of a circle is 62.8 cm, what is its radius? (Use π = 3.14)",
+          "choices": [
+            "5 cm",
+            "10 cm",
+            "15 cm",
+            "20 cm"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What is a region in a circle bounded by two radii and an arc?",
+          "choices": [
+            "Segment",
+            "Sector",
+            "Chord",
+            "Secant"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which of the following is NOT a property of a circle?",
+          "choices": [
+            "It has infinite lines of symmetry",
+            "It is a three-dimensional shape",
+            "Its circumference is proportional to its radius",
+            "It has rotational symmetry"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "A secant is:",
+          "choices": [
+            "A line segment that passes through two points on a circle",
+            "The longest chord of a circle",
+            "A line that touches the circle at one point",
+            "A region bounded by two radii and an arc"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "If the area of a circle is 78.5 cm², what is its radius? (Use π = 3.14)",
+          "choices": [
+            "3 cm",
+            "5 cm",
+            "7 cm",
+            "9 cm"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which of the following statements is false?",
+          "choices": [
+            "A tangent touches the circle at one point",
+            "A chord is always longer than a radius",
+            "The diameter is twice the radius",
+            "A secant touches the circle at one point"
+          ],
+          "answer": 3
+        }
+      ]
+    }, {
+
+      "lessonId": "quadratic-trinomials",
+      "title": "Quadratic Trinomials Assessment",
+      "questions": [{
+          "question": "What is the general form of a quadratic trinomial?",
+          "choices": [
+            "(x - h)² + k",
+            "ax² + bx + c",
+            "a(x - h)² + k",
+            "ax + bx² + c"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What is the standard form (vertex form) of a quadratic trinomial?",
+          "choices": [
+            "ax² + bx + c",
+            "(x - h)² + k",
+            "a(x - h)² + k",
+            "ax² + c"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "What method is used to convert a trinomial from general form to standard form?",
+          "choices": [
+            "Factoring",
+            "Completing the square",
+            "Synthetic division",
+            "FOIL method"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What is the vertex of the quadratic equation y = (x - 3)² + 5?",
+          "choices": [
+            "(3, 5)",
+            "(-3, 5)",
+            "(5, 3)",
+            "(3, -5)"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What value of 'h' is used to rewrite x² - 8x + 12 in standard form?",
+          "choices": [
+            "4",
+            "-4",
+            "8",
+            "-8"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What is the standard form of the quadratic equation x² - 6x + 8?",
+          "choices": [
+            "(x - 3)² + 1",
+            "(x - 3)² - 1",
+            "(x + 3)² - 1",
+            "(x - 3)² - 7"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What is the first step in completing the square?",
+          "choices": [
+            "Divide by 2",
+            "Add c to both sides",
+            "Factor out 'a' from the first two terms",
+            "Multiply everything by 'a'"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "If the quadratic equation is 2x² + 8x + 5, what should be factored out first?",
+          "choices": [
+            "2",
+            "8",
+            "5",
+            "Nothing"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What is the missing value to complete the square for x² + 10x?",
+          "choices": [
+            "25",
+            "5",
+            "20",
+            "100"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "Which of the following equations is in standard form?",
+          "choices": [
+            "x² + 6x + 9",
+            "(x + 3)² - 4",
+            "x² + 4x + 2",
+            "x(x + 2) + 5"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does the value of 'k' represent in standard form?",
+          "choices": [
+            "The slope",
+            "The vertex’s x-coordinate",
+            "The y-coordinate of the vertex",
+            "The stretch factor"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "What is the vertex of y = 2(x - 1)² + 3?",
+          "choices": [
+            "(1, 3)",
+            "(-1, 3)",
+            "(3, 1)",
+            "(-3, 1)"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What is the correct transformation of y = x² when written as y = (x - 4)² + 2?",
+          "choices": [
+            "Right 4, Up 2",
+            "Left 4, Up 2",
+            "Right 4, Down 2",
+            "Left 4, Down 2"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "If y = 3(x + 2)² - 7, what is the stretch factor?",
+          "choices": [
+            "3",
+            "-7",
+            "2",
+            "-3"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What is the standard form of 3x² + 12x + 7?",
+          "choices": [
+            "3(x + 2)² - 5",
+            "3(x - 2)² - 5",
+            "3(x + 2)² + 5",
+            "3(x - 2)² + 5"
+          ],
+          "answer": 0
+        }
+      ]
+
+    }, {
+
+      "lessonId": "parabola-assessment",
+      "title": "Parabola Assessment",
+      "questions": [{
+          "question": "What is the equation of a parabola that opens upwards with a vertex at (0,0) and a focus at (0,2)?",
+          "choices": [
+            "x^2=8y",
+            "x^2=4y",
+            "x^2=-4y",
+            "y^2=4x"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What is the directrix of the parabola?",
+          "choices": [
+            "y=-3",
+            "y=3",
+            "y=-6",
+            "y=6"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "Which of the following is the vertex of the parabola (x-2)^2=8(y+1)?",
+          "choices": [
+            "(2,1)",
+            "(-2,-1)",
+            "(2,-1)",
+            "(-2,1)"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "Find the focus of the parabola y^2=-16x.",
+          "choices": [
+            "(-4,0)",
+            "(4,0)",
+            "(0,4)",
+            "(0,-4)"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "The equation [missing text] represents a parabola. Find its vertex.",
+          "choices": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What is the standard form of the equation [missing text]?",
+          "choices": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "If the parabola [missing text] ...",
+          "choices": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "What is the axis of symmetry for the parabola [missing text]?",
+          "choices": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What is the shape of a parabola’s graph?",
+          "choices": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "If the directrix of a parabola is given [missing text], what is its focus?",
+          "choices": [
+            "Option A",
+            "Option B",
+            "Option C",
+            "Option D"
+          ],
+          "answer": 3
+        },
+        {
+          "question": "Graph and solve: [Problem-Solving Item 1]",
+          "choices": [],
+          "answer": null
+        },
+        {
+          "question": "Find the equation of the parabola with focus (2,3) and a given directrix. [Problem-Solving Item 2]",
+          "choices": [],
+          "answer": null
+        },
+        {
+          "question": "A bridge arch follows a certain curve. Find its highest point. [Problem-Solving Item 3]",
+          "choices": [],
+          "answer": null
+        },
+        {
+          "question": "Given an equation [missing text], find its vertex, focus, and directrix. [Problem-Solving Item 4]",
+          "choices": [],
+          "answer": null
+        },
+        {
+          "question": "A satellite dish is modeled by a parabola. Find its focal length. [Problem-Solving Item 5]",
+          "choices": [],
+          "answer": null
+        }
+      ]
+
+    }, {
+      "lessonId": "hyperbola-challenge",
+      "title": "Hyperbola Challenge!",
+      "questions": [{
+          "question": "1. What is the standard form of a vertical hyperbola centered at (h, k)?",
+          "choices": [
+            "(y - k)²/(a²) - (x - h)²/(b²) = 1",
+            "(x - h)²/(a²) - (y - k)²/(b²) = 1",
+            "(x - h)²/(a²) + (y - k)²/(b²) = 1",
+            "(y - k)²/(b²) - (x - h)²/(a²) = 1"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "2. Which equation represents a horizontal hyperbola centered at (0,0)?",
+          "choices": [
+            "y²/(a²) - x²/(b²) = 1",
+            "x²/(a²) - y²/(b²) = 1",
+            "x²/(a²) + y²/(b²) = 1",
+            "y²/(b²) - x²/(a²) = 1"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "3. If a hyperbola has the equation x²/9 - y²/(b²) = 1, what are the coordinates of the vertices?",
+          "choices": [
+            "(±3, 0)",
+            "(0, ±3)",
+            "(±4, 0)",
+            "(0, ±4)"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "4. What is the relationship between a, b, and c in a hyperbola?",
+          "choices": [
+            "c² = a² - b²",
+            "c² = a² + b²",
+            "c² = b² - a²",
+            "c = a + b"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "5. The center of the hyperbola given by an equation with (h, k) = (3, -1) is:",
+          "choices": [
+            "(3, 1)",
+            "(-3, -1)",
+            "(3, -1)",
+            "(-3, 1)"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "6. Which of the following describes the foci of a hyperbola?",
+          "choices": [
+            "The points where the branches open",
+            "The points where the hyperbola crosses the axes",
+            "Fixed points inside each branch",
+            "The points where the asymptotes cross"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "7. If the asymptotes of a hyperbola yield a ratio b/a = 5/3, what is that ratio?",
+          "choices": [
+            "5/3",
+            "3/5",
+            "5",
+            "3"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "8. A hyperbola with a given equation has which asymptotes?",
+          "choices": [
+            "y = 2x + 1 and y = -2x + 1",
+            "y = (5/3)x + 2 and y = -(5/3)x + 2",
+            "y = 3x - 4 and y = -3x - 4",
+            "y = (3/5)x + 1 and y = -(3/5)x + 1"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "9. What is the equation of a hyperbola with center at (0,0), vertices at (±6,0), and foci at (±8,0)?",
+          "choices": [
+            "x²/36 - y²/28 = 1",
+            "x²/28 - y²/36 = 1",
+            "y²/36 - x²/28 = 1",
+            "y²/28 - x²/36 = 1"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "10. Which of the following describes a hyperbola with a horizontal transverse axis?",
+          "choices": [
+            "The y-term comes first in the equation",
+            "The x-term comes first in the equation",
+            "The equation has only one squared term",
+            "The asymptotes are always horizontal lines"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "11. [Problem-Solving] Graph the hyperbola and find its foci. (Use a graphing tool as needed.)",
+          "choices": [],
+          "answer": null
+        },
+        {
+          "question": "12. [Problem-Solving] Find the equation of a hyperbola with vertices at (0, ±5) and foci at (0, ±7).",
+          "choices": [],
+          "answer": null
+        },
+        {
+          "question": "13. [Problem-Solving] Given asymptotes with b/a = 4/3 and a center at (2, 3), find the equation of the hyperbola.",
+          "choices": [],
+          "answer": null
+        },
+        {
+          "question": "14. [Problem-Solving] Graph the hyperbola with center (1, -2), a² = 36, and b² = 25. Find its key features (vertices, asymptotes, etc.).",
+          "choices": [],
+          "answer": null
+        },
+        {
+          "question": "15. [Problem-Solving] A hyperbola has its center at (-2, 3), one vertex at (-2, 7), and one focus at (-2, 9). Find its equation.",
+          "choices": [],
+          "answer": null
+        }
+      ]
+    }
+
+
+
+
+
+  ]
+}
