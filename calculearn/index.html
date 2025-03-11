@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CalcuLearn Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Google Fonts: Montserrat for headings and Open Sans for body -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="sidebar">
+    <ul>
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="lessons.html">Lessons</a></li>
+      <li><a href="quiz.html">Assessments</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="progress.html">Progress Tracker</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+  <div class="content">
+    <header>
+      <h1>Welcome to CalcuLearn</h1>
+      <p>Your journey to mastering Calculus starts here—learn, explore, and excel!</p>
+    </header>
+    <div class="quick-access">
+      <button onclick="window.location.href='lessons.html'">🎯 Continue Learning</button>
+      <button onclick="window.location.href='lessons.html'">📖 Browse Lessons</button>
+      <button onclick="window.location.href='quiz.html'">📝 Take a Quiz</button>
+    </div>
+    <div class="progress-summary">
+      <p>Lessons Completed: <span id="lessonsCompleted">0/5</span></p>
+      <p>Quiz Performance: <span id="quizScore">0%</span></p>
+    </div>
+    <div class="featured">
+      <a href="lessons.html">
+        <img src="images/featured.jpg" alt="Start Here: Introduction to Conic Sections">
+        <p>Start Here: Introduction to Conic Sections</p>
+      </a>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

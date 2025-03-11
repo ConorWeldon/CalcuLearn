@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lessons - CalcuLearn</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="sidebar">
+    <ul>
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="lessons.html">Lessons</a></li>
+      <li><a href="quiz.html">Assessments</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="progress.html">Progress Tracker</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+  <div class="content">
+    <header>
+      <h1 id="lesson-title"></h1>
+    </header>
+    <section id="lesson-objectives"></section>
+    <section id="lesson-content"></section>
+    <section id="lesson-resources"></section>
+    <!-- Container for any additional lesson data -->
+    <section id="additional-data"></section>
+  </div>
+  
+  <div class="lesson-navigation">
+    <button onclick="location.href='lessons.html?page=prev'">⬅️ Previous Lesson</button>
+    <button onclick="location.href='lessons.html?page=next'">➡️ Next Lesson</button>
+    <button onclick="location.href='index.html'">🔙 Back to Dashboard</button>
+  </div>
+  
+  <script>
+    // Helper function to recursively render any object/array data
+    function renderData(key, value) {
+      let html = "";
+      if (typeof value === 'string') {
+        // Render string values in a paragraph.
+        html += "<p>" + value + "</p>";
+      } else if (Array.isArray(value)) {
+        html += "<ul>";
+        value.forEach(item => {
+          if (typeof item === 'string') {
+            html += "<li>" + item + "</li>";
+          } else if (typeof item === 'object') {
+            // If the item is an object, render its data recursively.
+            html += "<li>" + renderData("", item) + "</li>";
+          }
+        });
+        html += "</ul>";
+      } else if (typeof value === 'object' && value !== null) {
+        for (let subKey in value) {
+          html += "<h4>" + subKey.charAt(0).toUpperCase() + subKey.slice(1) + ":</h4>";
+          html += renderData(subKey, value[subKey]);
+        }
+      }
+      return html;
+    }
+
+    // Fetch lesson content from the JSON file
+    fetch('data/lessons.json')
+      .then(response => response.json())
+      .then(data => {
+        const urlParams = new URLSearchParams(window.location.search);
+        // Use either the "id" or "lesson_title" field to determine the current lesson.
+        const currentLessonId = urlParams.get('lessonId') || (data.lessons[0].id || data.lessons[0].lesson_title);
+
+        // Find the index of the current lesson (checking both id and lesson_title)
+        let currentLessonIndex = data.lessons.findIndex(l => l.id === currentLessonId || l.lesson_title === currentLessonId);
+
+        if (currentLessonIndex !== -1) {
+          let lesson = data.lessons[currentLessonIndex];
+          // Set the lesson title using either "title" or "lesson_title"
+          document.getElementById("lesson-title").textContent = lesson.title || lesson.lesson_title;
+
+          // Render lesson objectives if they exist
+          if (lesson.objectives) {
+            let objHTML = "<h3>Lesson Objectives:</h3><ol>";
+            lesson.objectives.forEach(obj => {
+              objHTML += "<li>" + obj + "</li>";
+            });
+            objHTML += "</ol>";
+            document.getElementById("lesson-objectives").innerHTML = objHTML;
+          }
+
+          // Render lesson content. Handle both array and object structures.
+          let contentHTML = "";
+          if (lesson.content) {
+            if (Array.isArray(lesson.content)) {
+              lesson.content.forEach(section => {
+                // If the section has heading/body fields, use them.
+                if (section.heading && section.body) {
+                  contentHTML += "<h3>" + section.heading + "</h3>";
+                  contentHTML += "<p>" + section.body + "</p>";
+                } else {
+                  // Otherwise, render the section using the recursive function.
+                  contentHTML += renderData("", section);
+                }
+              });
+            } else if (typeof lesson.content === "object") {
+              for (let key in lesson.content) {
+                contentHTML += "<h3>" + key.charAt(0).toUpperCase() + key.slice(1) + ":</h3>";
+                contentHTML += renderData(key, lesson.content[key]);
+              }
+            }
+          }
+          document.getElementById("lesson-content").innerHTML = contentHTML;
+
+          // Render additional resources if available
+          if (lesson.resources) {
+            let resHTML = "<h3>Additional Resources:</h3><ul>";
+            lesson.resources.forEach(resource => {
+              resHTML += `<li><a href="${resource.url}" target="_blank">${resource.title}</a></li>`;
+            });
+            resHTML += "</ul>";
+            document.getElementById("lesson-resources").innerHTML = resHTML;
+          }
+
+          // Loop over any remaining keys in the lesson object (such as note, introduction, steps, etc.)
+          let additionalHTML = "";
+          for (let key in lesson) {
+            if (["id", "title", "lesson_title", "objectives", "content", "resources"].indexOf(key) === -1) {
+              additionalHTML += "<h3>" + key.charAt(0).toUpperCase() + key.slice(1) + ":</h3>";
+              additionalHTML += renderData(key, lesson[key]);
+            }
+          }
+          document.getElementById("additional-data").innerHTML = additionalHTML;
+
+          // Set up navigation buttons
+          const prevLesson = data.lessons[currentLessonIndex - 1];
+          const nextLesson = data.lessons[currentLessonIndex + 1];
+
+          const prevButton = document.querySelector('button[onclick*="prev"]');
+          if (prevLesson) {
+            prevButton.onclick = () => window.location.href = `lessons.html?lessonId=${prevLesson.id || prevLesson.lesson_title}`;
+          } else {
+            prevButton.disabled = true;
+          }
+
+          const nextButton = document.querySelector('button[onclick*="next"]');
+          if (nextLesson) {
+            nextButton.onclick = () => window.location.href = `lessons.html?lessonId=${nextLesson.id || nextLesson.lesson_title}`;
+          } else {
+            nextButton.disabled = true;
+          }
+        }
+      })
+      .catch(error => {
+        console.error("Error loading lesson content:", error);
+      });
+  </script>
+  
+  </div>
+</body>
+</html>

@@ -1,0 +1,161 @@
+/* Base settings */
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f4f4f4; /* Light background for contrast */
+  color: #333;
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 220px;
+  background: #2E7D32; /* Primary green */
+  color: #fff;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+  background-color: #1B5E20;
+}
+
+/* Content area styling */
+.content {
+  margin-left: 260px;
+  padding: 20px;
+  background: #fff;
+  min-height: 100vh;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+header h1 {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 0;
+  color: #2E7D32; /* Use primary green for headings */
+}
+
+/* Section headings */
+.content h3 {
+  color: #2E7D32;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+  margin-top: 30px;
+}
+
+/* Lesson Objectives styling */
+#lesson-objectives ol {
+  padding-left: 20px;
+}
+
+/* Lesson Content styling */
+#lesson-content p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Additional Data Section */
+#additional-data {
+  margin-top: 20px;
+  padding: 15px;
+  background: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+/* Navigation buttons */
+.lesson-navigation {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.lesson-navigation button,
+.quiz-navigation button {
+  background: #64B5F6;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.lesson-navigation button:hover,
+.quiz-navigation button:hover {
+  background: #42A5F5;
+  transform: translateY(-2px);
+}
+
+/* Quick access buttons */
+.quick-access button {
+  background: #64B5F6;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.quick-access button:hover {
+  background: #42A5F5;
+  transform: translateY(-2px);
+}
+
+/* Featured content styling */
+.featured img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.featured p {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 180px;
+    padding: 15px;
+  }
+  .content {
+    margin-left: 200px;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sidebar {
+    width: 100%;
+    position: relative;
+    box-shadow: none;
+  }
+  .content {
+    margin: 0;
+  }
+}

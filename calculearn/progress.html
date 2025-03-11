@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Progress Tracker - CalcuLearn</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="sidebar">
+    <ul>
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="lessons.html">Lessons</a></li>
+      <li><a href="quiz.html">Assessments</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="progress.html">Progress Tracker</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+  <div class="content">
+    <header>
+      <h1>Your Progress</h1>
+    </header>
+    <div class="progress-details">
+      <p>Lessons Completed: <span id="progressLessons">0/5</span></p>
+      <p>Quiz Scores: <span id="quizScores">No quizzes taken yet.</span></p>
+      <p>Quiz Average Score: <span id="progressQuiz">0%</span></p>
+    </div>
+    <button onclick="location.href='index.html'">Resume Learning</button>
+    <button onclick="clearQuizScores()">Reset Quiz Scores</button>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Fetch and display lessons completed
+      let lessonsCompleted = localStorage.getItem('lessonsCompleted') || 0;
+      document.getElementById('progressLessons').innerText = lessonsCompleted + "/5";
+
+      // Fetch quiz scores from localStorage
+      let quizScores = JSON.parse(localStorage.getItem('quizScores')) || {};
+      
+      if (Object.keys(quizScores).length > 0) {
+        let quizList = Object.keys(quizScores).map((quizNumber) => {
+          return `<li>Quiz ${quizNumber}: ${quizScores[quizNumber]}%</li>`;
+        }).join('');
+        
+        document.getElementById('quizScores').innerHTML = `<ul>${quizList}</ul>`;
+        
+        // Calculate the average score
+        let averageScore = Object.values(quizScores).reduce((acc, score) => acc + score, 0) / Object.values(quizScores).length;
+        document.getElementById('progressQuiz').innerText = averageScore.toFixed(2) + "%";
+      } else {
+        document.getElementById('quizScores').innerText = "No quizzes taken yet.";
+        document.getElementById('progressQuiz').innerText = "0%";
+      }
+    });
+
+    function clearQuizScores() {
+      // Clear all quiz scores from localStorage
+      localStorage.removeItem('quizScores');
+      localStorage.setItem('currentQuizNumber', 1); // Reset the quiz number to 1
+      alert("All quiz scores have been cleared. Please refresh page to see update");
+    }
+
+
+  </script>
+</body>
+</html>
